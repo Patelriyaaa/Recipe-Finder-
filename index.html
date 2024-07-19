@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Finder</h1>
+        </header>
+        <main>
+            <form id="searchForm">
+                <input type="text" id="search" placeholder="Enter ingredients">
+                <button type="submit" class="btn">Search</button>
+            </form>
+            <div class="filters">
+                <label for="diet">Filter by diet:</label>
+                <select id="diet" class="filter-select">
+                    <option value="">All</option>
+                    <option value="alcohol-free">Alcohol-free</option>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-fiber">High-Fiber</option>
+                    <option value="high-protein">High-Protein</option>
+                    <option value="keto">Keto</option>
+                    <option value="kidney-friendly">Kidney Friendly</option>
+                    <option value="kosher">Kosher</option>
+                    <option value="low-carb">Low-Carb</option>
+                    <option value="low-fat">Low-Fat</option>
+                    <option value="low-potassium">Low-Potassium</option>
+                    <option value="low-sodium">Low-Sodium</option>
+                    <option value="no-oil-added">No Oil Added</option>
+                    <option value="no-sugar">No-Sugar</option>
+                    <option value="paleo">Paleo</option>
+                    <option value="pescatarian">Pescatarian</option>
+                    <option value="pork-free">Pork-Free</option>
+                    <option value="red-meat-free">Red Meat-Free</option>
+                    <option value="sugar-conscious">Sugar-Conscious</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+            </div>
+            <div id="results"></div>
+            <div id="spinner" class="spinner"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
